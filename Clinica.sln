@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Api.Usuario", "1 - 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{0B975209-C63F-4424-8E55-B6362905856F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Application", "2 - Application\Clinica.Application\Clinica.Application.csproj", "{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Application.Usuario", "2 - Application\Clinica.Application\Clinica.Application.Usuario.csproj", "{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Communication", "3 - Communication", "{280C75A8-6153-4560-B609-300014F4E93D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Usuario.Communication", "3 - Communication\Clinica.Usuario.Communication\Clinica.Usuario.Communication.csproj", "{260D6F6F-C034-4481-9AFA-1B504CCCAC42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Communication.Usuario", "3 - Communication\Clinica.Usuario.Communication\Clinica.Communication.Usuario.csproj", "{260D6F6F-C034-4481-9AFA-1B504CCCAC42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
