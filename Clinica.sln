@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36804.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{59E1BA89-DD79-4C98-9052-DBCA806ED625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Api.Usuario", "1 - Presentation\API\Clinica.Api.Usuario\Clinica.Api.Usuario.csproj", "{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{0B975209-C63F-4424-8E55-B6362905856F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Application", "2 - Application\Clinica.Application\Clinica.Application.csproj", "{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59E1BA89-DD79-4C98-9052-DBCA806ED625} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4} = {59E1BA89-DD79-4C98-9052-DBCA806ED625}
+		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99} = {0B975209-C63F-4424-8E55-B6362905856F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {231B2844-FF81-4601-9187-DE0C2CFA18CF}
+	EndGlobalSection
+EndGlobal
