@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Domain.Usuario", "4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Exception.Usuario", "5 - Exception\Clinica.Exception.Usuario\Clinica.Exception.Usuario.csproj", "{88180EB4-9D01-4B10-863C-9C82AC3B8E69}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Infrastrucure", "6 - Infrastrucure", "{DEC5DB5C-BF66-40B4-A99E-58DB5B7FE3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Infrastrucure.Usuario", "6 - Infrastrucure\Clinica.Infrastrucure.Usuario\Clinica.Infrastrucure.Usuario.csproj", "{3C2CF054-4C26-4CB8-8BE1-3C21182D8940}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{88180EB4-9D01-4B10-863C-9C82AC3B8E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88180EB4-9D01-4B10-863C-9C82AC3B8E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88180EB4-9D01-4B10-863C-9C82AC3B8E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2CF054-4C26-4CB8-8BE1-3C21182D8940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2CF054-4C26-4CB8-8BE1-3C21182D8940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2CF054-4C26-4CB8-8BE1-3C21182D8940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2CF054-4C26-4CB8-8BE1-3C21182D8940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{260D6F6F-C034-4481-9AFA-1B504CCCAC42} = {280C75A8-6153-4560-B609-300014F4E93D}
 		{41E28F4C-91DF-E941-DBC4-CAF70E69CF72} = {DB76728F-88E3-41B6-B802-74A3567F1005}
 		{88180EB4-9D01-4B10-863C-9C82AC3B8E69} = {C7497681-E0AE-4C66-AAE2-BF739AF97D74}
+		{3C2CF054-4C26-4CB8-8BE1-3C21182D8940} = {DEC5DB5C-BF66-40B4-A99E-58DB5B7FE3E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {231B2844-FF81-4601-9187-DE0C2CFA18CF}
