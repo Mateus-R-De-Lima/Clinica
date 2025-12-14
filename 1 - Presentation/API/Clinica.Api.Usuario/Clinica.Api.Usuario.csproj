@@ -14,4 +14,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\2 - Application\Clinica.Application\Clinica.Application.Usuario.csproj" />
+    <ProjectReference Include="..\..\..\3 - Communication\Clinica.Usuario.Communication\Clinica.Communication.Usuario.csproj" />
+  </ItemGroup>
+
 </Project>
