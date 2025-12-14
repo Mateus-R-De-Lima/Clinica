@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Application", "2 - Application\Clinica.Application\Clinica.Application.csproj", "{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Communication", "3 - Communication", "{280C75A8-6153-4560-B609-300014F4E93D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Usuario.Communication", "3 - Communication\Clinica.Usuario.Communication\Clinica.Usuario.Communication.csproj", "{260D6F6F-C034-4481-9AFA-1B504CCCAC42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,10 @@ Global
 		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260D6F6F-C034-4481-9AFA-1B504CCCAC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260D6F6F-C034-4481-9AFA-1B504CCCAC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260D6F6F-C034-4481-9AFA-1B504CCCAC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260D6F6F-C034-4481-9AFA-1B504CCCAC42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +43,7 @@ Global
 		{59E1BA89-DD79-4C98-9052-DBCA806ED625} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{1D23AB39-B08B-4C59-9B0C-AE75DEC8A2F4} = {59E1BA89-DD79-4C98-9052-DBCA806ED625}
 		{ED7D36B4-0F2B-430B-9747-C5D43BC57B99} = {0B975209-C63F-4424-8E55-B6362905856F}
+		{260D6F6F-C034-4481-9AFA-1B504CCCAC42} = {280C75A8-6153-4560-B609-300014F4E93D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {231B2844-FF81-4601-9187-DE0C2CFA18CF}
