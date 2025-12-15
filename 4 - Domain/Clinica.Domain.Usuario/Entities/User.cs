@@ -1,6 +1,6 @@
 ﻿namespace Clinica.Domain.Usuario.Entities
 {
-    public class Usuario
+    public class User
     {
         public long Id { get; set; }
         public string Name { get; set; } = string.Empty;

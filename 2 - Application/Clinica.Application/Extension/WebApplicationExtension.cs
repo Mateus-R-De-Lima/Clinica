@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Clinica.Infrastrucure.Usuario;
 
 namespace Clinica.Application.Usuario.Extension
 {
@@ -12,6 +13,10 @@ namespace Clinica.Application.Usuario.Extension
             builder.Services.AddControllers();
   
             builder.Services.AddOpenApi();
+
+            
+            builder.Services.AddInfrastructure(builder.Configuration);
+
 
             var app = builder.Build();
 
