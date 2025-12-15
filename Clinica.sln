@@ -33,6 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - Shared", "7 - Shared", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Shared.Usuario", "7 - Shared\Clinica.Shared.Usuario\Clinica.Shared.Usuario.csproj", "{DC3612C9-66D7-44B8-9072-9943EA4AC3C7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerComposes", "DockerComposes", "{4222FF68-821E-4047-8924-88DA0074B630}"
+	ProjectSection(SolutionItems) = preProject
+		7 - Shared\DockerComposes\docker-compose.yml = 7 - Shared\DockerComposes\docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +85,7 @@ Global
 		{88180EB4-9D01-4B10-863C-9C82AC3B8E69} = {C7497681-E0AE-4C66-AAE2-BF739AF97D74}
 		{3C2CF054-4C26-4CB8-8BE1-3C21182D8940} = {DEC5DB5C-BF66-40B4-A99E-58DB5B7FE3E4}
 		{DC3612C9-66D7-44B8-9072-9943EA4AC3C7} = {D9D4A21C-1D87-4FF4-B0C5-97F5E998B6C4}
+		{4222FF68-821E-4047-8924-88DA0074B630} = {D9D4A21C-1D87-4FF4-B0C5-97F5E998B6C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {231B2844-FF81-4601-9187-DE0C2CFA18CF}
