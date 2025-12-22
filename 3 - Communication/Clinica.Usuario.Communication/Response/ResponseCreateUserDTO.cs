@@ -1,5 +1,5 @@
 ﻿namespace Clinica.Communication.Usuario.Response
 {
-    public record ResponseCreateUserDTO(string Nome, string Email);
+    public record ResponseCreateUserDTO(long Id,string Nome, string Email);
     
 }

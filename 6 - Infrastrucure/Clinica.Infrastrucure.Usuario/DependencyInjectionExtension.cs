@@ -1,4 +1,5 @@
-﻿using Clinica.Domain.Usuario.Repositories;
+﻿using Clinica.Domain.Usuario;
+using Clinica.Domain.Usuario.Repositories;
 using Clinica.Infrastrucure.Usuario.DataAccess;
 using Clinica.Infrastrucure.Usuario.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +32,9 @@ namespace Clinica.Infrastrucure.Usuario
         {
             services.AddScoped<IUserReadOnlyRepository, UserRepository>();
             services.AddScoped<IUserWriteOnlyRepository, UserRepository>();
+
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
     }
