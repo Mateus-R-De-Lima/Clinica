@@ -11,7 +11,8 @@ namespace Clinica.Application.Usuario.UseCases.Usuario.Create
 {
     public class CreateUserUseCase(IUserWriteOnlyRepository userWriteOnlyRepository,
                                    IUserReadOnlyRepository userReadOnlyRepository,
-                                   IUnitOfWork unitOfWork)
+                                   IUnitOfWork unitOfWork
+                                  ): ICreateUserUseCase
     {
 
         public async Task<ResponseCreateUserDTO> Execute(RequestCreateUserDTO request)

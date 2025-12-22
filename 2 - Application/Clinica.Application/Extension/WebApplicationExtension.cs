@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Clinica.Application.Usuario.UseCases.Usuario.Create;
 using Clinica.Infrastrucure.Usuario;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Clinica.Application.Usuario.Extension
 {
@@ -11,16 +12,20 @@ namespace Clinica.Application.Usuario.Extension
             // Add services to the container.
 
             builder.Services.AddControllers();
-  
             builder.Services.AddOpenApi();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+            
 
             
             builder.Services.AddInfrastructure(builder.Configuration);
 
+            builder.Services.AddScoped<ICreateUserUseCase, CreateUserUseCase>();
 
             var app = builder.Build();
 
-           
+            app.UseSwagger();
+            app.UseSwaggerUI();
             app.MapOpenApi();
 
 
