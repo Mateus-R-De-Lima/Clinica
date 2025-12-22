@@ -8,7 +8,7 @@ namespace Clinica.Application.Usuario.UseCases.Usuario.Create
     {
         public CreateUserValidate()
         {
-            RuleFor(user => user.Nome)
+            RuleFor(user => user.Name)
                 .NotEmpty().WithMessage(ResourceErrorMessages.THE_NAME_IS_REQUIRED)
                 .MaximumLength(100).WithMessage(ResourceErrorMessages.THE_NAME_MAX_LENGTH_100);
 

@@ -1,4 +1,5 @@
-﻿using Clinica.Application.Usuario.UseCases.Usuario.Create;
+﻿using Clinica.Application.Usuario.Mapper;
+using Clinica.Application.Usuario.UseCases.Usuario.Create;
 using Clinica.Infrastrucure.Usuario;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +22,11 @@ namespace Clinica.Application.Usuario.Extension
             builder.Services.AddInfrastructure(builder.Configuration);
 
             builder.Services.AddScoped<ICreateUserUseCase, CreateUserUseCase>();
+
+            builder.Services.AddAutoMapper(configureAutoMapper =>
+            {
+                configureAutoMapper.AddProfile<AutoMapping>();
+            });
 
             var app = builder.Build();
 

@@ -1,4 +1,5 @@
-﻿using Clinica.Communication.Usuario.Enums;
+﻿using AutoMapper;
+using Clinica.Communication.Usuario.Enums;
 using Clinica.Communication.Usuario.Request;
 using Clinica.Communication.Usuario.Response;
 using Clinica.Domain.Usuario;
@@ -11,7 +12,8 @@ namespace Clinica.Application.Usuario.UseCases.Usuario.Create
 {
     public class CreateUserUseCase(IUserWriteOnlyRepository userWriteOnlyRepository,
                                    IUserReadOnlyRepository userReadOnlyRepository,
-                                   IUnitOfWork unitOfWork
+                                   IUnitOfWork unitOfWork,
+                                   IMapper mapper
                                   ): ICreateUserUseCase
     {
 
@@ -19,20 +21,19 @@ namespace Clinica.Application.Usuario.UseCases.Usuario.Create
         {
             await Validate(request);
 
-            var userEntity = new User()
-            {
-                Email = request.Email,
-                EmpresaId = Guid.NewGuid(),
-                Name = request.Nome,
-                Password = request.Password,
-                Role = Roles.ADMIN
-            };
+            var userEntity = mapper.Map<User>(request);
+
+            //TODO: Receber de quest o Role e EmpresaId
+            userEntity.EmpresaId = Guid.NewGuid();
+            userEntity.Role = Roles.ADMIN;
 
             await userWriteOnlyRepository.AddUser(userEntity).ConfigureAwait(false);
 
             await unitOfWork.Commit().ConfigureAwait(false);
 
-            return new ResponseCreateUserDTO(userEntity.Id, userEntity.Name, userEntity.Email);
+            var response = mapper.Map<ResponseCreateUserDTO>(userEntity);
+
+            return response;
 
         }
 
