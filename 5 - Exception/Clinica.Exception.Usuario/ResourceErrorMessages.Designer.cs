@@ -167,5 +167,14 @@ namespace Clinica.Exception.Usuario {
                 return ResourceManager.GetString("THE_PASSWORD_MUST_CONTAIN_UPPERCASE_LETTER", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Unknown error..
+        /// </summary>
+        public static string UNKNOWN_ERROR {
+            get {
+                return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
+            }
+        }
     }
 }

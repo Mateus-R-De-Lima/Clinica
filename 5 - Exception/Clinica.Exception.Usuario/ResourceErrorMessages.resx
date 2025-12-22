@@ -153,4 +153,7 @@
   <data name="THE_PASSWORD_MUST_CONTAIN_UPPERCASE_LETTER" xml:space="preserve">
     <value>The password must contain at least one uppercase letter.</value>
   </data>
+  <data name="UNKNOWN_ERROR" xml:space="preserve">
+    <value>Unknown error.</value>
+  </data>
 </root>

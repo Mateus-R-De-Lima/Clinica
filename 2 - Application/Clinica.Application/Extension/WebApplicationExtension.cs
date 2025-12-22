@@ -1,7 +1,9 @@
 ﻿using Clinica.Application.Usuario.Mapper;
 using Clinica.Application.Usuario.UseCases.Usuario.Create;
 using Clinica.Infrastrucure.Usuario;
+using Clinica.Application.Usuario.Filters;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Clinica.Application.Usuario.Extension
@@ -28,6 +30,7 @@ namespace Clinica.Application.Usuario.Extension
                 configureAutoMapper.AddProfile<AutoMapping>();
             });
 
+            builder.Services.AddMvc(option => option.Filters.Add(typeof(ClinicaExecptionFilter)));
             var app = builder.Build();
 
             app.UseSwagger();
